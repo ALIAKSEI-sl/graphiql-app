@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@400;500;700&display=swap');
+
+// Colors
+$color-black: #2A2A2A;
+$color-white: #ffffff;
+$color-error: #DB1F1F;
+
+$color-primary-20: #2F1B4C;
+$color-primary-40: #4C3F77;
+$color-primary-60: #7A4EC1;
+$color-primary-80: #A485D6;
+$color-primary-95: #DACDEE;
+$color-primary-98: #F4F0FA;
+
+
+// Breakpoints
+$max-tablet: 1168px;
+$max-mobile: 768px;
+
+
+// Text
+@mixin font-h1 {
+  font: {
+    family: 'Ubuntu', sans-serif;
+    size: 92px;
+    weight: 700;
+  }
+  line-height: 108px;
+  @media (max-width: $max-tablet) {
+    font-size: 72px;
+    line-height: 80px;
+  }
+  @media (max-width: $max-mobile) {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+@mixin font-h2 {
+  font: {
+    family: 'Ubuntu', sans-serif;
+    size: 64px;
+    weight: 700;
+  }
+  line-height: 72px;
+  @media (max-width: $max-tablet) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@mixin font-h3 {
+  font: {
+    family: 'Ubuntu', sans-serif;
+    size: 48px;
+    weight: 700;
+  }
+  line-height: 56px;
+  @media (max-width: $max-tablet) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@mixin font-h4 {
+  font: {
+    family: 'Ubuntu', sans-serif;
+    size: 40px;
+    weight: 700;
+  }
+  line-height: 48px;
+  @media (max-width: $max-tablet) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@mixin font-h5 {
+  font: {
+    family: 'Ubuntu', sans-serif;
+    size: 32px;
+    weight: 700;
+  }
+  line-height: 40px;
+  @media (max-width: $max-tablet) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@mixin font-h6 {
+  font: {
+    family: 'Ubuntu', sans-serif;
+    size: 20px;
+    weight: 700;
+  }
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@mixin font-text {
+  font: {
+    family: 'Ubuntu', sans-serif;
+    size: 16px;
+    weight: 400;
+  }
+  line-height: 24px;
+}
+
+@mixin font-text-bold {
+  font: {
+    family: 'Ubuntu', sans-serif;
+    size: 16px;
+    weight: 700;
+  }
+  line-height: 24px;
+}
+
+@mixin font-mono {
+  font: {
+    family: 'Ubuntu Mono', monospace;
+    size: 18px;
+    weight: 400;
+  }
+  line-height: 22px;
+  @media (max-width: $max-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@mixin font-caption {
+  font: {
+    family: 'Ubuntu', sans-serif;
+    size: 12px;
+    weight: 400;
+  }
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+@mixin font-overline {
+  font: {
+    family: 'Ubuntu', sans-serif;
+    size: 12px;
+    weight: 500;
+  }
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

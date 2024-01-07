@@ -1,0 +1,13 @@
+@import "../../styles/tokens.scss";
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  & > *:first-child {
+    flex-grow: 1;
+    max-height: calc(100vh - 368px);
+    overflow-y: auto;
+  }
+}

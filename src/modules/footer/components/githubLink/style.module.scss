@@ -1,0 +1,16 @@
+@import "../../../../styles/tokens.scss";
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  & > span {
+    color: $color-primary-95;
+    @include font-text
+  }
+  
+  &:hover {
+    filter: drop-shadow(0 0 4px $color-primary-80);
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../../../styles/tokens.scss";
+
+.card {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 32px;
+
+  min-width: 288px;
+  max-width: 480px;
+
+  border-radius: 32px;
+  background: $color-black;
+  color: $color-white;
+  border: solid 3px $color-white;
+
+  & > * {
+    text-align: center;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 16px $color-primary-80);
+    cursor: pointer;
+    & h4 {
+      color: $color-primary-60;
+    }
+    & .img-wrapper {
+      filter: none;
+    }
+  }
+}
+
+.img-wrapper {
+  display: flex;
+  align-items: flex-end;
+  width: 200px;
+  height: 80px;
+  filter: grayscale(100%);
+}

@@ -1,0 +1,17 @@
+@import "../../styles/tokens.scss";
+
+.playground__wrapper {
+  display: flex;
+  gap: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  min-height: calc(100vh - 80px);
+}
+
+
+@media (max-width: $max-mobile) {
+  .playground__wrapper {
+    flex-direction: column;
+    padding: 16px;
+  }
+}

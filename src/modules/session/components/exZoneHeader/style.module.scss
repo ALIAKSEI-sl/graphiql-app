@@ -1,0 +1,15 @@
+@import "../../../../styles/tokens.scss";
+
+.header {
+  display: flex;
+  border-top: solid 1px $color-white;
+}
+
+.btn-bar {
+  flex-grow: 1;
+  display: flex;
+}
+
+.versa {
+  transform: rotate(180deg);
+}

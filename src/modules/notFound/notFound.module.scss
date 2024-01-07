@@ -1,0 +1,29 @@
+@import "../../styles/tokens.scss";
+
+.notFound {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &>h3 {
+    @include font-h3
+  }
+
+  img {
+    @media (max-width: $max-mobile) {
+      width: 286px;
+    }
+  }
+}

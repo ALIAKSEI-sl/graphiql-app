@@ -1,0 +1,39 @@
+@import "../../../../styles/tokens.scss";
+
+.field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  .input {
+    @include font-text;
+    width: 100%;
+    border-radius: 16px;
+    border: 2px solid $color-black;
+    padding: 8px 16px;
+  }
+
+  .errorInput {
+    border: 2px solid $color-error;
+    color: $color-error;
+  }
+
+  .label {
+    @include font-overline;
+    padding: 4px 16px;
+  }
+
+  .error {
+    @include font-caption;
+    width: 100%;
+    color: $color-error;
+    padding: 4px 16px;
+    height: 24px;
+
+    @media (max-width: $max-mobile) {
+      height: 35px;
+    }
+  }
+}

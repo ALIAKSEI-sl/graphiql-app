@@ -1,0 +1,54 @@
+@import "../../styles/tokens.scss";
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 32px;
+  background-color: $color-black;
+  z-index: 100;
+  transition: all 1s;
+
+  &_top {
+    // transform: scale(1.05);
+    padding: 0 64px;
+    background-color: #000;
+  }
+
+  & .lang {
+    padding-left: 32px;
+  }
+
+  & .nav {
+    justify-content: flex-end;
+    flex-grow: 1;
+    @media (max-width: $max-mobile) {
+      display: none;
+    }
+  }
+
+  & .logout-btn {
+    & svg {
+      fill: $color-error;
+    }
+    &:enabled:hover {
+      opacity: 0.8;
+      & svg {
+        fill: $color-error;
+      }
+    }
+    @media (max-width: $max-mobile) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $max-mobile) {
+    padding: 0 16px;
+
+    &_top {
+      padding: 0 32px;
+    }
+  }
+}

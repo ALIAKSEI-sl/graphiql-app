@@ -1,0 +1,62 @@
+@import "../../../../../styles/tokens.scss";
+
+.docs {
+  @include font-text;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 6px;
+  gap: 7px;
+
+  .docs_types,
+  .docs_queries {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .docs_defaultValue {
+    color: $color-white;
+  }
+
+  .docs_symbol {
+    color: $color-white;
+  }
+
+  .docs_args {
+    color: $color-error;
+  }
+
+  .docs_link {
+    cursor: pointer;
+    background: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .docs_query {
+    color: #4081fa;
+  }
+
+  .docs_base {
+    color: $color-primary-80;
+    border: none;
+  }
+
+  .docs_nested {
+    padding: 5px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .docs_type {
+    color: #eb9c00;
+    border: none;
+    background: inherit;
+  }
+}

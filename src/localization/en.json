@@ -1,0 +1,108 @@
+{
+  "name": "name",
+  "password": "password",
+  "navigation": {
+    "home": "Home",
+    "playground": "Playground",
+    "login": "Login",
+    "registration": "Registration",
+    "logout": "LogOut"
+  },
+  "created_by": "Created by",
+  "not_found_page": {
+    "title": "Page Not Found",
+    "btn_home": "Home Page"
+  },
+  "forms": {
+    "name": "name",
+    "email": "email",
+    "password": "password",
+    "confirm_password": "confirm password"
+  },
+  "validation": {
+    "name": {
+      "necessarily": "The 'name' field is required",
+      "capital_letter": "The 'name' should begin with a capital letter"
+    },
+    "email": {
+      "necessarily": "The 'email' field is required",
+      "incorrect": "Incorrect email address"
+    },
+    "password": {
+      "necessarily": "The 'password' field is required",
+      "min": "Should contain 8 characters",
+      "capital_letter": "Should contain a capital letter",
+      "lowercase_letter": "Should contain a lowercase letter",
+      "number": "Should contain a number",
+      "special_character": "Should contain one special character"
+    },
+    "confirm_password": {
+      "necessarily": "The 'password confirmation' field is required",
+      "match": "The passwords must match"
+    }
+  },
+  "auth_messages": {
+    "success_registration": "Registration successful",
+    "success_login": "Login successful",
+    "existing_user_error": "There is already an existing customer with the provided email",
+    "failed_login": "Invalid email or password, please try again",
+    "other_error": "Registration failed, please try again later",
+    "docs": "An error occurred while retrieving documentation!"
+  },
+  "herro_banner": {
+    "description": "GraphiQL is a playground/IDE for graphQL requests.",
+    "btn-text-nonauth": "Get started",
+    "btn-text-auth": "Open Playground"
+  },
+  "demo_section": {
+    "text_1_white": "Requests with",
+    "text_1_colored": "syntax higlighting",
+    "text_2_white": "Elaborate design ",
+    "text_2_colored": "from mobile to desktop",
+    "img_desk_alt": "Playground on desktop demonstration",
+    "img_mobile_alt": "Playground on mobile demonstration"
+  },
+  "img_school_alt": "Link to The Rolling Scopes School",
+  "team_section": {
+    "title": "Our Team",
+    "subtitle": "G.O.D.S. (Gurus Of Developmental Skills)"
+  },
+  "api_widget": {
+    "validation": {
+      "necessary": "Field should be filled",
+      "url": "Invalid URL (https://example.com)"
+    },
+    "api_exist": "This API already exists!",
+    "api_set": "API added!",
+    "api_error": "Something went wrong, try again!"
+  },
+  "variables": "Variables",
+  "headers": "Headers",
+  "docs": {
+    "docs": "Docs",
+    "types": "Types",
+    "query": "Query"
+  },
+  "empty_body": "Enter data in playground/IDE to request",
+  "empty_url": "Enter url to request",
+  "teammembers": {
+    "aliaksey": {
+      "name": "Aliaksei Hancharevich",
+      "position": "Developer",
+      "description":
+        "I am a Frontend Developer with a background in creating responsive and user-friendly web applications. Proficient in HTML, CSS, JavaScript and TypeScript, I specialize in modern frontend framework like React and Angular. My expertise includes designing visually appealing and performance web solutions, collaborating with teams, and adhering to UI/UX best practices. I am passionate about delivering seamless user experiences and ensuring cross-browser compatibility."
+    },
+    "max": {
+      "name": "Maksim Fil",
+      "position": "Developer",
+      "description":
+        "I was born in Donetsk on November 15, 1992. Graduated from Donetsk National Technical University🏫. I work as a chief engineer and programmer of CNC machines.🕵️‍♂️  I’ve been doing front-end development at RS School for a year now, it’s very interesting and addictive like a drug.  I also travel a lot and am not tied to my place of residence. Visited many countries. I love football⚽️. And I want to fly to Mars or the Moon.😉"
+    },
+    "illia": {
+      "name": "Illia Sakharau",
+      "position": "Developer",
+      "description":
+        "I am a Front-end developer with a unique background. After dedicating two years to working as a UI/UX designer, I discovered my passion for the technical aspects of web development. Motivated by this realization, I made a deliberate career shift towards Front-end development."
+    }
+  }
+}

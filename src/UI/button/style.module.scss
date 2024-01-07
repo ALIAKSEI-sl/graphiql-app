@@ -1,0 +1,72 @@
+@import "../../styles/tokens.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  border-radius: 22px;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+
+.round {
+  padding: 0 8px;
+  width: 44px;
+}
+.rectangle {
+  padding: 0 20px;
+}
+
+.primary {
+  background: $color-primary-60;
+  color: $color-white;
+  & svg {
+    fill: $color-white;
+  }
+  &:enabled:hover {
+    cursor: pointer;
+    background: $color-primary-80;
+  }
+  &:enabled:active, &.active {
+    background: $color-primary-40;
+  }
+}
+.onWhite {
+  background: none;
+  color: $color-black;
+  & svg {
+    fill: $color-black;
+  }
+  &:enabled:hover {
+    cursor: pointer;
+    color: $color-primary-60;
+    & svg {
+      fill: $color-primary-60;
+    }
+  }
+  &:enabled:active, &.active {
+    background: $color-primary-95;
+  }
+}
+.onBlack {
+  background: none;
+  color: $color-white;
+  & svg {
+    fill: $color-white;
+  }
+  &:enabled:hover {
+    cursor: pointer;
+    color: $color-primary-80;
+    & svg {
+      fill: $color-primary-80;
+    }
+  }
+  &:enabled:active, &.active {
+    background: $color-primary-40;
+  }
+}

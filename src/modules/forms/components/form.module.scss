@@ -1,0 +1,23 @@
+@import "../../../styles/tokens.scss";
+
+.wrapForm {
+  width: 526px;
+
+  @media (max-width: $max-mobile) {
+    width: 256px;
+  }
+}
+
+.form {
+  padding: 20px 0;
+
+  .submit-btn {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.title {
+  margin-top: 30px;
+  @include font-h4;
+}

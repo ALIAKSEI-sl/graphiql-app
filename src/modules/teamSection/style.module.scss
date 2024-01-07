@@ -1,0 +1,18 @@
+@import "../../styles/tokens.scss";
+
+.team {
+  background: $color-primary-20;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.developers {
+  display: flex;
+  justify-content: center;
+  gap: 152px 32px;
+  flex-wrap: wrap;
+  padding-top: 152px;
+}

@@ -1,0 +1,26 @@
+@import "../../../../styles/tokens.scss";
+
+.form {
+  display: flex;
+  align-items: center;
+  border-top: solid 1px $color-primary-40;
+  padding-top: 16px;
+  margin-bottom: -8px;
+
+  & > *:first-child {
+    flex-grow: 1;
+  }
+}
+
+.button {
+  margin-left: -22px;
+  padding-left: 24px;
+  width: inherit;
+  border-radius: 0 24px 24px 0;
+}
+
+@media (max-width: $max-mobile) {
+  .button {
+    margin-bottom: 11px;
+  }
+}

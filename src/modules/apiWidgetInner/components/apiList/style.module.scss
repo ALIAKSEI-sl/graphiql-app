@@ -1,0 +1,10 @@
+@import "../../../../styles/tokens.scss";
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    min-height: 44px;
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../styles/tokens.scss";
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px);
+  background: url('../../assets/herro-bg.webp') 50%/cover no-repeat;
+
+  &__wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    height: 100%;
+    background: url('../../assets/logo-symbol.svg') 95% 50% no-repeat;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+
+  width: 50vw;
+  max-width: 660px;
+
+  & h2 {
+    @include font-h2;
+    color: $color-primary-80;
+  }
+  & span {
+    @include font-h5;
+    color: $color-white;
+  }
+}
+
+@media (max-width: $max-tablet) {
+  .banner {  
+    &__wrapper {
+      background: url('../../assets/logo-symbol.svg') 150% 50% no-repeat;
+    }
+  }
+}
+
+@media (max-width: $max-mobile) {
+  .banner {  
+    &__wrapper {
+      align-items: stretch;
+      background: none;
+    }
+  }
+  .header {
+    flex-grow: 1;
+    width: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../../styles/tokens.scss";
+
+.wrapper {
+  display: flex;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0 0 8px $color-primary-80);
+  }
+
+  & * {
+    text-transform: uppercase;
+  }
+}
+
+.lang {
+  display: flex;
+  color: $color-white;
+  @include font-text;
+}
+
+.active {
+  color: $color-primary-80;
+  @include font-text-bold;
+}
+
+.devider {
+  color: $color-primary-40;
+}

@@ -1,0 +1,17 @@
+@import "../../../../styles/tokens.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > * {
+    text-align: center;
+  }
+  & h2 {
+    color: $color-white;
+  }
+  & h5 {
+    color: $color-primary-80;
+  }
+}

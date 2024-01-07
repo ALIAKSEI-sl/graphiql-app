@@ -1,0 +1,27 @@
+@import "../../styles/tokens.scss";
+
+.loader_wrap {
+  margin: auto;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border-radius: 100px;
+  border-top: 5px solid $color-primary-20;
+  border-left: 3px solid $color-primary-60;
+  border-bottom: 4px solid $color-primary-98;
+  border-right: transperent;
+  animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

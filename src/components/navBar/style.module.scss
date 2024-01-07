@@ -1,0 +1,43 @@
+@import "../../styles/tokens.scss";
+
+.navBar {
+  display: flex;
+  gap: 16px;
+
+  & > a {
+    position: relative;
+    @include font-h6;
+    color: $color-white;
+    padding: 8px 16px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 3px;
+      background: $color-primary-80;
+      transition: all 0.25s;
+    }
+
+    &:hover {
+      &::before {
+        left: 0;
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
+
+    &.active {
+      color: $color-primary-80;
+    }
+  }
+
+  @media (max-width: $max-mobile) {
+    gap: 8px;
+    & > a {
+      padding: 8px 12px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../styles/tokens.scss";
+
+.school {
+  margin: 0 auto;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.rss-logo {
+  max-width: 100%;
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: $max-mobile) {
+}

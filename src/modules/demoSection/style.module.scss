@@ -1,0 +1,81 @@
+@import "../../styles/tokens.scss";
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  background: url('../../assets/logo-symbol-10.svg') 90% 115% no-repeat $color-primary-20;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    margin-top: -112px;
+    &:last-child {
+      padding-top: 0;
+    }
+  }
+}
+
+.text {
+  color: $color-white;
+  width: calc(25vW);
+  min-width: 240px;
+  max-width: 360px;
+  & p {
+    @include font-h5;
+  }
+  & .colored {
+    color: $color-primary-60;
+  }
+}
+
+.img-desk {
+  flex-grow: 1;
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.img-mob {
+  width: calc(25vW);
+  max-width: 360px;
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: $max-mobile) {
+  .demo {  
+    overflow-x: hidden;
+    &__wrapper {
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 0;
+      &:last-child {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .text {
+    width: 100%;
+    min-width: inherit;
+    max-width: inherit;
+    text-align: center;
+  }
+
+  .img-desk {
+    width: 100%;
+    & img {
+      width: 150%;
+      object-fit: cover;
+    }
+  }
+  
+  .img-mob {
+    order: 2;
+    width: 50%;
+  }
+}

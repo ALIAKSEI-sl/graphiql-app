@@ -1,0 +1,15 @@
+@import "../../../../styles/tokens.scss";
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 16px;
+  padding-right: 16px;
+}
+
+@media (max-width: $max-mobile) {
+  .bar {
+    flex-direction: row-reverse;
+  }
+}

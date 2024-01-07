@@ -1,0 +1,48 @@
+@import "../../styles/tokens.scss";
+
+.login {
+  width: 590px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid $color-black;
+  border-radius: 20px;
+
+  @media (max-width: $max-mobile) {
+    width: 288px;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    background-color: $color-black;
+    border-radius: 16px 16px 0 0;
+
+    &>a {
+      position: relative;
+      @include font-h6;
+      color: $color-white;
+      padding: 8px 16px;
+
+      &:hover {
+        scale: 1.1;
+        transition: all 0.25s;
+      }
+
+      &.active {
+        color: $color-primary-80;
+      }
+    }
+
+    &>h4 {
+      @include font-h4;
+    }
+
+  }
+}

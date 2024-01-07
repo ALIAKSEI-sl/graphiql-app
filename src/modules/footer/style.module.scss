@@ -1,0 +1,87 @@
+@import "../../styles/tokens.scss";
+
+.footer {
+  background: $color-black;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    @media (max-width: $max-mobile) {
+      gap: 48px;
+    }
+  }
+}
+
+.top-side {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  & .nav-bar {
+    padding-left: 40px;
+    border-left: solid 1px $color-primary-40;
+  }
+
+  @media (max-width: $max-mobile) {
+    flex-direction: column;
+    gap: 16px;
+
+    & .nav-bar {
+      padding-left: 0;
+      padding-top: 16px;
+      border-left: none;
+      border-top: solid 1px $color-primary-40;
+    }
+  }
+}
+
+.bottom-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 48px;
+  @media (max-width: $max-mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.creators {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: $color-primary-80;
+
+  &__inner {
+    display: flex;
+    gap: 16px;
+  }
+  @media (max-width: $max-mobile) {
+    align-items: center;
+
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @media (max-width: $max-mobile) {
+    align-items: center;
+  }
+}
+
+.rss-logo {
+  &:hover {
+    filter: drop-shadow(0 0 8px $color-primary-60);
+  }
+}
+
+.copyright {
+  color: $color-white;
+  opacity: 0.3;
+}

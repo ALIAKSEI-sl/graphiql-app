@@ -1,0 +1,48 @@
+@import "../../../../styles/tokens.scss";
+
+.wrapper {
+  display: none;
+  flex-grow: 1;
+  justify-content: flex-end;
+
+  @media (max-width: $max-mobile) {
+    display: flex;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  height: calc(100vh - 80px);
+  width: 100vw;
+  padding: 32px 16px;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  
+  background: $color-primary-20;
+  border-top: solid 1px $color-primary-80;
+  border-bottom: solid 1px $color-primary-80;
+
+  &.active {
+    display: flex;
+  }
+
+  & .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-grow: 1;
+  }
+
+  & .logout-btn {
+    color: $color-error;
+    &:enabled:hover {
+      color: $color-error;
+      opacity: 0.8;
+    }
+  }
+}

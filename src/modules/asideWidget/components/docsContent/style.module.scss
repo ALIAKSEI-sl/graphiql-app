@@ -1,0 +1,49 @@
+@import "../../../../styles/tokens.scss";
+
+
+.docs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  position: relative;
+
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    height: auto;
+    border-right: none;
+  }
+
+  .btnRow {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @media (max-width: 1023px) {
+      height: 40px;
+    }
+
+    .docsOpenBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .docsText {
+    height: 100%;
+    width: 300px;
+    padding: 5px;
+    overflow-y: auto;
+
+    @media (max-width: 1023px) {
+      height: 100px;
+      width: 100%;
+    }
+  }
+}
